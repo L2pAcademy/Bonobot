@@ -6,8 +6,7 @@ from setuptools import find_packages
 version = '0.1'
 
 install_requires = [
-    'discord.py',
-    'aiohttp'
+    'discord.py'
 ]
 
 setup(
