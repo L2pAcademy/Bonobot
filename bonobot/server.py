@@ -10,7 +10,7 @@ class HttpRequestHandler(aiohttp.server.ServerHttpProtocol):
         self.client = kwargs['client']
         self.token = kwargs['token']
         self.Action = kwargs['action']
-        super()
+        super(HttpRequestHandler, self).__init__(*args, **kwargs)
 
     async def handle_request(self, message, payload):
         """Traite une requête POST pour executer une action"""
